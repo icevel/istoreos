@@ -136,6 +136,7 @@ board_set_iface_smp_affinity() {
         ;;
     lyt,t68m|\
     fastrhino,r68s|\
+    dg,nas-lite|\
     hinlink,opc-h68k)
         set_iface_cpumask 1 "eth0"
         set_iface_cpumask 2 "eth1"

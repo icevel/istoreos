@@ -97,3 +97,13 @@ define Device/hsa_bh2
   DEVICE_PACKAGES := kmod-scsi-core
 endef
 TARGET_DEVICES += hsa_bh2
+
+define Device/dg_nas-lite
+$(call Device/rk3568)
+  DEVICE_VENDOR := DG
+  DEVICE_MODEL := NAS-Lite
+  DEVICE_DTS := rk3568-dg-nas-lite
+  SUPPORTED_DEVICES += dg,nas-lite
+  DEVICE_PACKAGES := kmod-nvme kmod-scsi-core
+endef
+TARGET_DEVICES += dg_nas-lite
